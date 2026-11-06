@@ -1,12 +1,9 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class WinCondition : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision other)
     {
         //TODO: make sure player gets correct tag
@@ -14,8 +11,10 @@ public class WinCondition : MonoBehaviour
         //ignore if chicken collides with goal point
         if (other.gameObject.CompareTag("Player"))
         {
+            //TODO: test if this works properly
             Debug.Log("You Won");
-            //TODO: trigger win state: Open window with text & option to return to menu
+            //load win screen scene
+            SceneManager.LoadScene(2);
         }
         
     }
