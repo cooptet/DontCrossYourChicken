@@ -17,6 +17,10 @@ public class TruckController : MonoBehaviour {
     public float highSpeedTurnMultiplier = 0.5f;
     public float steeringSmoothness = 5f;
 
+    [Header("Road Bounds")]
+    public BoxCollider roadBounds;
+    public float edgeMargin = 1f;
+
     private Rigidbody rb;
 
     private float verticalInput;
@@ -46,48 +50,46 @@ public class TruckController : MonoBehaviour {
     void FixedUpdate() {
         HandleMovement();
         HandleSteering();
+        KeepOnRoad();
     }
 
     void HandleMovement() {
-        float targetSpeed = 0f;
+    float targetSpeed = 0f;
 
-        if (!isBraking) {
-            if (verticalInput > 0)
-                targetSpeed = maxForwardSpeed;
-            else if (verticalInput < 0)
-                targetSpeed = -maxReverseSpeed;
-        }
-
-        float changeRate;
-
-        if (isBraking) {
-            changeRate = brakePower;
-        }
-        else if (Mathf.Abs(verticalInput) < 0.01f) {
-            changeRate = deceleration;
-        }
-        else if (Mathf.Abs(currentSpeed) > 0.01f &&
-                 Mathf.Sign(currentSpeed) != Mathf.Sign(targetSpeed)) {
-            changeRate = brakePower;
-        }
-        else {
-            changeRate = acceleration;
-        }
-
-        currentSpeed = Mathf.MoveTowards(
-            currentSpeed,
-            targetSpeed,
-            changeRate * Time.fixedDeltaTime
-        );
-
-        Vector3 movement =
-            transform.forward *
-            currentSpeed *
-            Time.fixedDeltaTime;
-
-        rb.MovePosition(rb.position + movement);
+    if (!isBraking) {
+        if (verticalInput > 0)
+            targetSpeed = maxForwardSpeed;
+        else if (verticalInput < 0)
+            targetSpeed = -maxReverseSpeed;
     }
 
+    float changeRate;
+
+    if (isBraking) {
+        changeRate = brakePower;
+    }
+    else if (Mathf.Abs(verticalInput) < 0.01f) {
+        changeRate = deceleration;
+    }
+    else if (Mathf.Abs(currentSpeed) > 0.01f &&
+             Mathf.Sign(currentSpeed) != Mathf.Sign(targetSpeed)) {
+        changeRate = brakePower;
+    }
+    else {
+        changeRate = acceleration;
+    }
+
+    currentSpeed = Mathf.MoveTowards(
+        currentSpeed,
+        targetSpeed,
+        changeRate * Time.fixedDeltaTime
+    );
+
+    // Keep vertical velocity (gravity), set horizontal velocity
+    Vector3 velocity = transform.forward * currentSpeed;
+    velocity.y = rb.linearVelocity.y;   // use rb.velocity on Unity 2022 and older
+    rb.linearVelocity = velocity;
+}
     void HandleSteering() {
         currentSteering = Mathf.MoveTowards(
             currentSteering,
@@ -121,5 +123,30 @@ public class TruckController : MonoBehaviour {
             rb.rotation * Quaternion.Euler(0f, rotation, 0f);
 
         rb.MoveRotation(newRotation);
+    }
+
+    void KeepOnRoad() {
+        if (roadBounds == null) return;
+
+        Transform road = roadBounds.transform;
+
+        // Work in the road's local space, so rotation and scale don't matter
+        Vector3 local = road.InverseTransformPoint(rb.position);
+
+        Vector3 half = roadBounds.size * 0.5f;
+        Vector3 c = roadBounds.center;
+
+        // Convert the margin to local units (assumes roughly uniform scale)
+        float mx = edgeMargin / Mathf.Abs(road.lossyScale.x);
+        float mz = edgeMargin / Mathf.Abs(road.lossyScale.z);
+
+        float clampedX = Mathf.Clamp(local.x, c.x - half.x + mx, c.x + half.x - mx);
+        float clampedZ = Mathf.Clamp(local.z, c.z - half.z + mz, c.z + half.z - mz);
+
+        if (!Mathf.Approximately(clampedX, local.x) || !Mathf.Approximately(clampedZ, local.z)) {
+            local.x = clampedX;
+            local.z = clampedZ;
+            rb.position = road.TransformPoint(local);
+        }
     }
 }

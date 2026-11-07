@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6386265452591984228, guid: d375decb61e29cd4797d91f2ebc6597c, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -259,6 +263,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992177098697630461, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -345,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3916960291958510533, guid: 77d6fa167b9dd4f4aa91eec897b956f3, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -360,6 +368,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527315051}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (3)
@@ -646,6 +658,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 2453295483674027274, guid: 8e695e0a174c0124198c2a4eac33308b, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5006842764396948184, guid: 8e695e0a174c0124198c2a4eac33308b, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -806,6 +822,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78065091}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (3)
@@ -946,6 +966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 2452006758726102380, guid: 12117dade10afc44babaa7859bf5a8cb, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8606229321992436563, guid: 12117dade10afc44babaa7859bf5a8cb, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -1024,6 +1048,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1811320939}
     m_Modifications:
+    - target: {fileID: 765377330337113727, guid: 0f1e14a243a07364eacf8cde505a9c2b, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1461811644385850770, guid: 0f1e14a243a07364eacf8cde505a9c2b, type: 3}
       propertyPath: m_Name
       value: Prop_Haystack_03
@@ -1294,6 +1322,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5864282540933235337, guid: c754dcd1fe6a015409569af86c7c1863, type: 3}
   m_PrefabInstance: {fileID: 268560388}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &274921224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237852892831124386, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666348269681850770, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_Name
+      value: Goal point
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07dd24599084f76438403d73be629566, type: 3}
 --- !u!1001 &301800582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1302,6 +1407,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 2285076841546736929, guid: fe7605a19bf829d46b366deda0c04974, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3748800670492521078, guid: fe7605a19bf829d46b366deda0c04974, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -2115,6 +2224,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2350,6 +2463,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4626755149073210824, guid: 1b72103361ec93849a6c678ffef1634c, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2368,6 +2485,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 307491414939856900, guid: 17755911f12715b46abdc3db02860d36, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6987150949061285597, guid: 17755911f12715b46abdc3db02860d36, type: 3}
       propertyPath: m_Name
       value: Prop_WoodenChest_02
@@ -2446,6 +2567,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 2285076841546736929, guid: fe7605a19bf829d46b366deda0c04974, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3748800670492521078, guid: fe7605a19bf829d46b366deda0c04974, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -2768,6 +2893,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1811320939}
     m_Modifications:
+    - target: {fileID: 178740793707116727, guid: 17be667ea2bc1e148933bc4124830c1f, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4659785721225557829, guid: 17be667ea2bc1e148933bc4124830c1f, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -2906,6 +3035,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7674142310284123764, guid: 0919f6373d0ba3c42898d72b84b02b38, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2919,6 +3052,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1811320939}
     m_Modifications:
+    - target: {fileID: 765377330337113727, guid: 0f1e14a243a07364eacf8cde505a9c2b, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1461811644385850770, guid: 0f1e14a243a07364eacf8cde505a9c2b, type: 3}
       propertyPath: m_Name
       value: Prop_Haystack_03 (2)
@@ -3092,6 +3229,10 @@ PrefabInstance:
     - target: {fileID: 6506563558900789204, guid: 916f5058d5c38aa4fb49d3769570cfab, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742901802992337592, guid: 916f5058d5c38aa4fb49d3769570cfab, type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3848,6 +3989,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4560,6 +4705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3579184058506552272, guid: 5160da60fcd7c9a4db97fbfa16e8e9ac, type: 3}
+      propertyPath: roadBounds
+      value: 
+      objectReference: {fileID: 889555805}
     - target: {fileID: 5025546517188709951, guid: 5160da60fcd7c9a4db97fbfa16e8e9ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5641,6 +5790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Tree_03
       objectReference: {fileID: 0}
+    - target: {fileID: 3126477070358868769, guid: b214a049616de1a4badde43d2a617311, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6221,6 +6374,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78065091}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (2)
@@ -6533,6 +6690,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8098992062956663221, guid: ee7bbe0c4dc2bdf429520e9bd33033e4, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6690,6 +6851,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6762,6 +6927,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992177098697630461, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7208,6 +7377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_WoodenCrates_02
       objectReference: {fileID: 0}
+    - target: {fileID: 7363269624297752414, guid: 2a40004eea175e7408fcf94d0228c6e4, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7727940942736773790, guid: 2a40004eea175e7408fcf94d0228c6e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -7425,6 +7598,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7742901802992337592, guid: 916f5058d5c38aa4fb49d3769570cfab, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7438,6 +7615,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 178740793707116727, guid: 17be667ea2bc1e148933bc4124830c1f, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4659785721225557829, guid: 17be667ea2bc1e148933bc4124830c1f, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -7516,6 +7697,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 6773813910802795001, guid: b13e8935972ad4d498de9bbddd312f70, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7290413623540235512, guid: b13e8935972ad4d498de9bbddd312f70, type: 3}
       propertyPath: m_Name
       value: Prop_FoodSack_03
@@ -7599,6 +7784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1605117210}
     m_Modifications:
+    - target: {fileID: 137295951556677523, guid: 067ab14566afc8c4083df72e1e40d89d, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2598006971146353846, guid: 067ab14566afc8c4083df72e1e40d89d, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -8666,6 +8855,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1811320939}
     m_Modifications:
+    - target: {fileID: 765377330337113727, guid: 0f1e14a243a07364eacf8cde505a9c2b, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1461811644385850770, guid: 0f1e14a243a07364eacf8cde505a9c2b, type: 3}
       propertyPath: m_Name
       value: Prop_Haystack_03 (1)
@@ -8762,7 +8955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003813673922202472, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8003813673922202472, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8770,7 +8963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003813673922202472, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8003813673922202472, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8958,6 +9151,10 @@ PrefabInstance:
     - target: {fileID: 2121971925846843879, guid: b214a049616de1a4badde43d2a617311, type: 3}
       propertyPath: m_Name
       value: Env_Tree_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126477070358868769, guid: b214a049616de1a4badde43d2a617311, type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9236,6 +9433,10 @@ PrefabInstance:
     - target: {fileID: 4240294571376406735, guid: f6eb79ef127b8eb40aeeca701c5def21, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589927446483377732, guid: f6eb79ef127b8eb40aeeca701c5def21, type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9845,6 +10046,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78065091}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (1)
@@ -9907,6 +10112,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78065091}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (4)
@@ -10106,6 +10315,10 @@ PrefabInstance:
     - target: {fileID: 3301343854319583298, guid: e1312df88a2b9934e8b0c3310d06ea6b, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7884639529852968110, guid: e1312df88a2b9934e8b0c3310d06ea6b, type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10484,6 +10697,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1811320939}
     m_Modifications:
+    - target: {fileID: 178740793707116727, guid: 17be667ea2bc1e148933bc4124830c1f, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4659785721225557829, guid: 17be667ea2bc1e148933bc4124830c1f, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -10622,6 +10839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Haystack_04
       objectReference: {fileID: 0}
+    - target: {fileID: 5997543341823838025, guid: 0ab3737e889b2fc418cd9cbd22ba5af8, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10738,6 +10959,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527315051}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (1)
@@ -11122,6 +11347,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78065091}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop
@@ -11184,6 +11413,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527315051}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (4)
@@ -11659,6 +11892,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992177098697630461, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12143,6 +12380,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1286462728}
     m_Modifications:
+    - target: {fileID: 382277312861469876, guid: 541b08bc544cf124daf4a447f2d514f0, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7413446242986566274, guid: 541b08bc544cf124daf4a447f2d514f0, type: 3}
       propertyPath: m_Name
       value: Env_Bush_01
@@ -12296,6 +12537,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1625333103}
     m_Modifications:
+    - target: {fileID: 49420577627044120, guid: 77276c782e506e94a8f2534bdc4a918e, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7362869685312060008, guid: 77276c782e506e94a8f2534bdc4a918e, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -12443,7 +12688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7885829278114004762, guid: d534d873f81082e4aa9f93a03e577725, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1286354
+      value: -2.8086472
       objectReference: {fileID: 0}
     - target: {fileID: 7885829278114004762, guid: d534d873f81082e4aa9f93a03e577725, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12789,6 +13034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12807,6 +13056,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 942304492}
     m_Modifications:
+    - target: {fileID: 382277312861469876, guid: 541b08bc544cf124daf4a447f2d514f0, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7413446242986566274, guid: 541b08bc544cf124daf4a447f2d514f0, type: 3}
       propertyPath: m_Name
       value: Env_Bush_01
@@ -12939,6 +13192,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992177098697630461, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13123,6 +13380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Wheelbarrow
       objectReference: {fileID: 0}
+    - target: {fileID: 1767605743565105614, guid: 72c3880aa9165ab4da9cb0656012807f, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2002748754189066392, guid: 72c3880aa9165ab4da9cb0656012807f, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -13246,6 +13507,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992177098697630461, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124717203382703193, guid: 136a5d02f7166784bb45906490294bfc, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13430,6 +13695,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 942304492}
     m_Modifications:
+    - target: {fileID: 3643105093074297416, guid: d534d873f81082e4aa9f93a03e577725, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7366700822235473312, guid: d534d873f81082e4aa9f93a03e577725, type: 3}
       propertyPath: m_Name
       value: Env_Tree_05 (1)
@@ -13456,7 +13725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7885829278114004762, guid: d534d873f81082e4aa9f93a03e577725, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1286354
+      value: -2.8086472
       objectReference: {fileID: 0}
     - target: {fileID: 7885829278114004762, guid: d534d873f81082e4aa9f93a03e577725, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13734,6 +14003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527315051}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop (2)
@@ -14037,6 +14310,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527315051}
     m_Modifications:
+    - target: {fileID: 4775415144792842185, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4810578117870855338, guid: cb4d35c78a2eea94a9a4e9ae36afa35a, type: 3}
       propertyPath: m_Name
       value: Bld_ChickenCoop
@@ -14113,3 +14390,4 @@ SceneRoots:
   - {fileID: 592783053}
   - {fileID: 1006732253}
   - {fileID: 71597099}
+  - {fileID: 274921224}
