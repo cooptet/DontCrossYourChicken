@@ -3,10 +3,10 @@ using System.Collections;
 
 public class ChickenHitFlash : MonoBehaviour
 {
-    public Renderer[] renderers;          
+    public Renderer[] renderers;
     public Color hitColor = Color.red;
-    public float duration = 1.5f;         
-    public float pulseSpeed = 10f;        
+    public float duration = 1.5f;
+    public float pulseSpeed = 10f;
 
     Color[] originalColors;
     Coroutine routine;
@@ -27,12 +27,6 @@ public class ChickenHitFlash : MonoBehaviour
             StartPulse();
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-            StartPulse();
-    }
-
     void StartPulse()
     {
         if (routine != null) StopCoroutine(routine);
@@ -45,7 +39,7 @@ public class ChickenHitFlash : MonoBehaviour
         while (t < duration)
         {
             t += Time.deltaTime;
-            float k = (Mathf.Sin(t * pulseSpeed) + 1f) * 0.5f; 
+            float k = (Mathf.Sin(t * pulseSpeed) + 1f) * 0.5f;
             for (int i = 0; i < renderers.Length; i++)
                 renderers[i].material.color = Color.Lerp(originalColors[i], hitColor, k);
             yield return null;
