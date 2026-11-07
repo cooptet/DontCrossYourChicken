@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerChickenHit : MonoBehaviour
@@ -5,6 +6,18 @@ public class PlayerChickenHit : MonoBehaviour
     public float freezeTime = 2f;
 
     float nextHitTime = 0f;
+
+    //[SerializeField] private GameObject controllerObj;
+    [SerializeField] HealthbarController healthbarController;
+
+    private void Start()
+    {
+        //healthbarController = GetComponent<HealthbarController>();
+        if (healthbarController == null)
+        {
+            Debug.Log("Help");
+        }
+    }
 
     void OnCollisionEnter(Collision c)
     {
@@ -28,5 +41,7 @@ public class PlayerChickenHit : MonoBehaviour
 
         Debug.Log("You hit your chicken!");
         nextHitTime = Time.time + freezeTime;
+        
+        healthbarController.ReduceHearts();
     }
 }
