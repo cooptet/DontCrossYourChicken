@@ -43,7 +43,7 @@ public class Flock : MonoBehaviour
         for (int i = 0; i < startingCount; i++)
         {
             Vector2 r = Random.insideUnitCircle * startingCount * AgentDensity;
-            Vector3 spawnPos = transform.position + new Vector3(r.x, 0f, r.y);
+            Vector3 spawnPos = transform.position + new Vector3(r.x, 0.1f, r.y);
 
             FlockAgent newAgent = Instantiate(
                 agentPrefab,
