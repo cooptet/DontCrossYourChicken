@@ -291,6 +291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bld_FarmerHouse
       objectReference: {fileID: 0}
+    - target: {fileID: 167982683308031783, guid: 77d6fa167b9dd4f4aa91eec897b956f3, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 657274791921558941, guid: 77d6fa167b9dd4f4aa91eec897b956f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -7021,7 +7025,7 @@ GameObject:
   - component: {fileID: 942304492}
   m_Layer: 0
   m_Name: Bushes_House_Left
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9001,7 +9005,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2490225353663522869, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: startingCount
-      value: 10
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490225353663522869, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
+      propertyPath: neighborRadius
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490225353663522869, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
+      propertyPath: avoidenceRadiusMulitiplier
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8003813673922202472, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9025,7 +9037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003813673922202472, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 9.2
       objectReference: {fileID: 0}
     - target: {fileID: 8003813673922202472, guid: dda559696c9e47245a8ce602f2b442cb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12938,7 +12950,7 @@ GameObject:
   - component: {fileID: 1857098868}
   m_Layer: 0
   m_Name: Buildings
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

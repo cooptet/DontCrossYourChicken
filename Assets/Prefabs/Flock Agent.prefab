@@ -56,8 +56,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.73568267
-  m_Center: {x: -0.12261349, y: 0.84382164, z: -0.013997674}
+  m_Radius: 0.7425618
+  m_Center: {x: -0.11573434, y: 0.84382164, z: -0.013997674}
 --- !u!114 &384625676116715691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,8 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59fc04711f84676479c2c095c4446a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChickenRepel
-  enterDuration: 1
-  stayDuration: 0.5
+  enterDuration: 1.5
+  stayDuration: 1.5
 --- !u!54 &4053007228596095385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2953939337933630744}
   serializedVersion: 5
-  m_Mass: 50
+  m_Mass: 10
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -129,6 +129,7 @@ MonoBehaviour:
   hitColor: {r: 1, g: 0, b: 0, a: 1}
   duration: 1.5
   pulseSpeed: 10
+  cooldown: 2
 --- !u!1001 &3459744796955841854
 PrefabInstance:
   m_ObjectHideFlags: 0

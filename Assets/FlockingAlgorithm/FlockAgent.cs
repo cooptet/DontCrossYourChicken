@@ -26,6 +26,7 @@ public class FlockAgent : MonoBehaviour
 
     public void Repel(Vector3 awayFromPosition, float duration = 1f)
     {
+        if (repelTimer > 0f) return;
         repelDirection = transform.position - awayFromPosition;
         repelDirection.y = 0f;
         if (repelDirection.sqrMagnitude < 0.001f)
@@ -48,6 +49,7 @@ public class FlockAgent : MonoBehaviour
 
     void FixedUpdate()
     {
+        rb.angularVelocity = Vector3.zero;
         //Debug.Log(name + " target: " + targetVelocity + " rb: " + rb.linearVelocity);
         currentVelocity = Vector3.Lerp(currentVelocity, targetVelocity, acceleration * Time.fixedDeltaTime);
 
