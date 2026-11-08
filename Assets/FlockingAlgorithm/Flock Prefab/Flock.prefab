@@ -46,11 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 384625676116715691, guid: f91a51b6b49ae6e4595d80a32b6207c4, type: 3}
   behavior: {fileID: 11400000, guid: 202472c6e1f810a4b8774f13b1f77cac, type: 2}
-  startingCount: 80
+  startingCount: 25
   driveFactor: 4
   maxSpeed: 3
-  neighborRadius: 1.5
-  avoidenceRadiusMulitiplier: 0.5
+  neighborRadius: 3.5
+  avoidenceRadiusMulitiplier: 0.9
   agentLayer:
     serializedVersion: 2
     m_Bits: 64

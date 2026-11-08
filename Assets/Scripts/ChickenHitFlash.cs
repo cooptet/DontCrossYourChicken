@@ -7,9 +7,12 @@ public class ChickenHitFlash : MonoBehaviour
     public Color hitColor = Color.red;
     public float duration = 1.5f;
     public float pulseSpeed = 10f;
+    public float cooldown = 2f;
 
     Color[] originalColors;
     Coroutine routine;
+
+    static float globalNextPulseTime = 0f;
 
     void Awake()
     {
@@ -24,12 +27,14 @@ public class ChickenHitFlash : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-            StartPulse();
+            TryPulse();
     }
 
-    void StartPulse()
+    void TryPulse()
     {
-        if (routine != null) StopCoroutine(routine);
+        if (Time.time < globalNextPulseTime || routine != null) return;
+
+        globalNextPulseTime = Time.time + duration + cooldown;
         routine = StartCoroutine(Pulse());
     }
 
