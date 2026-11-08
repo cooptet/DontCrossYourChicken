@@ -9,7 +9,6 @@ public class HealthbarController : MonoBehaviour
     private void Start()
     {
         currentHealth = Hearts.Length;
-        Debug.Log(currentHealth);
     }
 
     public void ReduceHearts()
@@ -22,7 +21,6 @@ public class HealthbarController : MonoBehaviour
             if (i >= currentHealth)
             {
                 Hearts[i].gameObject.SetActive(false);
-                Debug.Log("hello");
             }
         }
         

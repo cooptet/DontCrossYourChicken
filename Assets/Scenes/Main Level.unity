@@ -1336,7 +1336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 773333769829038636, guid: 07dd24599084f76438403d73be629566, type: 3}
       propertyPath: m_LocalScale.z
@@ -1390,9 +1390,21 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4237852892831124386, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237852892831124386, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5666348269681850770, guid: 07dd24599084f76438403d73be629566, type: 3}
       propertyPath: m_Name
       value: Goal point
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666348269681850770, guid: 07dd24599084f76438403d73be629566, type: 3}
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
