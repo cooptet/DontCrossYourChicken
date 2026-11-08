@@ -132,6 +132,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 605d0caffe3b2fe489bc37e772cb7496, type: 3}
+      propertyPath: m_TagString
+      value: Chicken
+      objectReference: {fileID: 0}
     - target: {fileID: 1548007752381316398, guid: 605d0caffe3b2fe489bc37e772cb7496, type: 3}
       propertyPath: m_Layer
       value: 6
