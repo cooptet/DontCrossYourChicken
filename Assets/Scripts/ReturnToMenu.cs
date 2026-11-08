@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinScreen : MonoBehaviour
+public class ReturnToMenu : MonoBehaviour
 {
     public void LoadMainMenu()
     {
