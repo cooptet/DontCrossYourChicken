@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "reach the shop at the end \nof the road. \nBut careful, don't hit your chicken,\n or they will get angry!\n\nUse arrow keys to drive.\nUse space to break."
+  m_text: "reach the shop at the end \nof the road. \nBut careful, don't hit your chickens,\n or they will get angry!\n\nUse arrow or wasd keys to drive.\nUse space to break."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b5d7f830f6ac3c4aba524c64edce078, type: 2}
   m_sharedMaterial: {fileID: -1153336321835374028, guid: 6b5d7f830f6ac3c4aba524c64edce078, type: 2}
