@@ -4904,6 +4904,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7132744674996933065, guid: 5160da60fcd7c9a4db97fbfa16e8e9ac, type: 3}
+      propertyPath: farmAudio
+      value: 
+      objectReference: {fileID: 1261683803}
+    - target: {fileID: -7132744674996933065, guid: 5160da60fcd7c9a4db97fbfa16e8e9ac, type: 3}
       propertyPath: controllerObj
       value: 
       objectReference: {fileID: 71597098}
@@ -9487,6 +9491,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6020172200812821352, guid: dd1314451e232934d84f9c1f0afb2806, type: 3}
   m_PrefabInstance: {fileID: 1245640609}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1261683802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261683804}
+  - component: {fileID: 1261683803}
+  m_Layer: 0
+  m_Name: GameAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1261683803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261683802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d369d1fc77555e64e89cb48d90b81398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChickenGame.Audio.FarmAudioController
+  backgroundMusic: {fileID: 8300000, guid: aec76acdfe53b1b43b64a8da14ea7dc3, type: 3}
+  musicVolume: 0.15
+  chickenAmbient: {fileID: 0}
+  chickenHit: {fileID: 8300000, guid: f9e38e22e17d4ed42ba16df8d3c151bd, type: 3}
+  ambientVolume: 0.1
+  hitVolume: 0.45
+  ambientEnabled: 0
+  ambientInterval: {x: 5, y: 9}
+  backgroundStartSeconds: 8
+--- !u!4 &1261683804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261683802}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07143, y: 0.05, z: 0.07143}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1269940269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15333,3 +15390,4 @@ SceneRoots:
   - {fileID: 1006732253}
   - {fileID: 71597099}
   - {fileID: 274921224}
+  - {fileID: 1261683804}
