@@ -40,6 +40,9 @@ namespace ChickenGame.Audio {
         [SerializeField, Min(0.01f)]
         private float hitFadeOut = 0.08f;
 
+        [SerializeField]
+        private bool continuousAmbient = true;
+
         private float hitEndTime;
 
         private AudioSource musicSource;
@@ -85,10 +88,10 @@ namespace ChickenGame.Audio {
             if (backgroundPaused || chickenAmbient == null)
                 return;
 
-            if (Time.time < nextAmbientTime)
+            if (!continuousAmbient && Time.time < nextAmbientTime)
                 return;
 
-            if (ambientSource.isPlaying || hitSource.isPlaying)
+            if (ambientSource.isPlaying)
                 return;
 
             ambientSource.pitch = Random.Range(0.95f, 1.05f);
@@ -134,7 +137,7 @@ namespace ChickenGame.Audio {
             if (clip == null)
                 return;
 
-            ambientSource.Stop();
+            //ambientSource.Stop();
             hitSource.Stop();
 
             hitSource.loop = false;
