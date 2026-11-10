@@ -129,7 +129,7 @@ MonoBehaviour:
   hitColor: {r: 1, g: 0, b: 0, a: 1}
   duration: 1.5
   pulseSpeed: 10
-  cooldown: 2
+  cooldown: 1
 --- !u!1001 &3459744796955841854
 PrefabInstance:
   m_ObjectHideFlags: 0

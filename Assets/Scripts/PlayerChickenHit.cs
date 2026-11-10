@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerChickenHit : MonoBehaviour
 {
-    public float freezeTime = 2f;
+    public float freezeTime = 1f;
 
     float nextHitTime = 0f;
     
