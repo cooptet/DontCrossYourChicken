@@ -11197,16 +11197,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d369d1fc77555e64e89cb48d90b81398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChickenGame.Audio.FarmAudioController
-  backgroundMusic: {fileID: 8300000, guid: aec76acdfe53b1b43b64a8da14ea7dc3, type: 3}
-  musicVolume: 0.1
-  chickenAmbient: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: ffe67a90b845f5442b7705447726239b, type: 3}
+  musicVolume: 0.09
+  chickenAmbient: {fileID: 8300000, guid: aec76acdfe53b1b43b64a8da14ea7dc3, type: 3}
   chickenHit: {fileID: 8300000, guid: f9e38e22e17d4ed42ba16df8d3c151bd, type: 3}
-  ambientVolume: 0.1
+  ambientVolume: 0.16
   hitVolume: 0.45
-  ambientEnabled: 0
-  ambientInterval: {x: 5, y: 9}
+  ambientEnabled: 1
+  ambientInterval: {x: 1, y: 100}
   ambientStartSeconds: 8
-  backgroundStartSeconds: 8
+  backgroundStartSeconds: 0
+  hitDuration: 0.45
+  hitFadeOut: 0.08
+  continuousAmbient: 1
 --- !u!4 &984669563
 Transform:
   m_ObjectHideFlags: 0
