@@ -144,12 +144,10 @@ Please refer to each package's Asset Store page for its licence and usage terms.
 
 ## Screenshots
 
-_Add screenshots to a `Screenshots/` folder and update the paths below._
-
 | Gameplay | Main menu |
 |---|---|
-| `Screenshots/gameplay.png` | `Screenshots/main-menu.png` |
+| <img width="850" height="503" alt="image" src="https://github.com/user-attachments/assets/acf9814e-8fc3-4e4e-b6f9-c4aed671b51a" /> | <img width="893" height="503" alt="image" src="https://github.com/user-attachments/assets/3cf58990-6888-43aa-94bb-10d4fca5bbae" /> |
 
-| Chicken hit feedback | Tutorial |
+| Map | Tutorial |
 |---|---|
-| `Screenshots/chicken-hit.png` | `Screenshots/tutorial.png` |
+| <img width="893" height="503" alt="image" src="https://github.com/user-attachments/assets/aac32544-189a-48c0-9ac8-d47ecb7a8cf7" /> | <img width="893" height="503" alt="image" src="https://github.com/user-attachments/assets/778786a3-2e0c-4e34-8b48-9b9dd6313c8f" /> |
